@@ -34,13 +34,6 @@ El **Sistema de Gestión de Títulos Universitarios (SGTU)** es una plataforma q
 ### Frontend (Flutter)
 El frontend está construido usando Flutter y sigue una arquitectura modular basada en **BLoC** (Business Logic Component).
 
-### Backend:
-
-Node.js: Servidor backend.
-Express.js: Framework para APIs RESTful.
-Supabase: Base de datos y autenticación.
-
-
 Instrucciones de Instalación
 
 Instalación del Frontend
@@ -51,8 +44,6 @@ git clone https://github.com/ZiroWagner/Sistema-Gestion-Tesis-Universitaria/tree
 ```shell
 cd sgtu_rontend
 ```
-
-
 ##### Instala las dependencias:
 
 ```shell
@@ -63,6 +54,20 @@ Ejecuta la aplicación:
 flutter run
 ```
 
+```plaintext
+├── core/               
+├── data/               
+├── domain/                
+├── presentatio/              
+└── main.dart       
+```
+
+### Backend (NODEjs):
+
+Node.js: Servidor backend.
+Express.js: Framework para APIs RESTful.
+Supabase: Base de datos y autenticación.
+
 #### Instalación del Backend
 Clona el repositorio:
 
@@ -72,7 +77,6 @@ git clone https://github.com/ZiroWagner/Sistema-Gestion-Tesis-Universitaria/tree
 ```shell
 cd sgtu-backend
 ```
-
 
 ##### Instala las dependencias:
 
@@ -85,19 +89,6 @@ Ejecuta el servidor:
 ```shell
 npm start
 ```
-
-Despliega el backend:
-vercel
-```plaintext
-├── core/               
-├── data/               
-├── domain/                
-├── presentatio/              
-└── main.dart       
-```          
-
-Backend (Node.js)
-
 El backend está implementado en Node.js utilizando Express.js como framework, con Supabase como servicio de base de datos y autenticación.
 
 ```plaintext

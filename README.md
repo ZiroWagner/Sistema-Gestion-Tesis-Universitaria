@@ -48,9 +48,10 @@ cd sgtu_rontend
 
 ```shell
 flutter pub get
+```
 
 Ejecuta la aplicación:
-
+```shell
 flutter run
 ```
 

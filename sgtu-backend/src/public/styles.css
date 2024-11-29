@@ -1,0 +1,157 @@
+/* Reset de estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definir fuentes y propiedades globales */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Fondo claro por defecto */
+    color: #333; /* Texto oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave entre modos */
+  }
+  
+  /* Estilos de la página */
+  .container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #68a063; /* Verde Node.js para el título */
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  strong {
+    color: #68a063; /* Verde Node.js */
+  }
+  
+  /* Botón de acción */
+  a.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #68a063; /* Verde Node.js */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.btn:hover {
+    background-color: #8cc84b; /* Verde más claro al pasar el mouse */
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  footer a {
+    color: #68a063; /* Verde Node.js para enlaces */
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* -------------- Estilos para el tema oscuro ---------------- */
+  
+  /* Cuando el usuario tiene configurado el tema oscuro en su sistema */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1d1f20; /* Fondo oscuro */
+      color: #e0e0e0; /* Texto claro */
+    }
+  
+    .container {
+      background-color: #2a2d2b; /* Fondo oscuro para el contenedor */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en modo oscuro */
+    }
+  
+    h1 {
+      color: #8cc84b; /* Verde más claro para el título en modo oscuro */
+    }
+  
+    a.btn {
+      background-color: #68a063; /* Botón verde Node.js */
+    }
+  
+    a.btn:hover {
+      background-color: #8cc84b; /* Verde más claro al pasar el mouse */
+    }
+  
+    footer {
+      color: #bbb; /* Color del footer en gris claro */
+    }
+  
+    footer a {
+      color: #8cc84b; /* Enlaces en verde claro en modo oscuro */
+    }
+  
+    footer a:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  /* -------------- Estilos para el tema claro ---------------- */
+  
+  /* Para el caso en que el usuario tenga el modo claro en su sistema */
+  @media (prefers-color-scheme: light) {
+    body {
+      background-color: #f7f7f7; /* Fondo claro */
+      color: #333; /* Texto oscuro */
+    }
+  
+    .container {
+      background-color: #fff; /* Fondo blanco para el contenedor */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave en modo claro */
+    }
+  
+    h1 {
+      color: #68a063; /* Título verde Node.js */
+    }
+  
+    a.btn {
+      background-color: #68a063; /* Botón verde Node.js */
+    }
+  
+    a.btn:hover {
+      background-color: #8cc84b; /* Verde más claro al pasar el mouse */
+    }
+  
+    footer {
+      color: #777; /* Color del footer en gris claro */
+    }
+  
+    footer a {
+      color: #68a063; /* Enlace en verde Node.js */
+    }
+  
+    footer a:hover {
+      text-decoration: underline;
+    }
+  }
+  
